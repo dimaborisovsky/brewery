@@ -1,0 +1,339 @@
+﻿@import url("reset.css");
+@import url(http://fonts.googleapis.com/css?family=Underdog|Neucha&subset=latin,cyrillic);
+/* ------------------------------------------------------------------------- */
+		/* FONT */
+/* ------------------------------------------------------------------------- */
+
+body {
+	font-family: 'Neucha', cursive;
+}
+
+.box {
+	font-family: 'Underdog', cursive;
+	font-size: 24px;
+}
+
+.logging {
+	font-size: 24px;
+	font-family: 'Neucha', cursive;
+}
+
+
+h2 {
+	font-size:34px;
+}
+
+#register-form {
+	font-size: 20px;
+}
+
+/* ------------------------------------------------------------------------- */
+		/* COLOR */
+/* ------------------------------------------------------------------------- */
+
+
+.logging .log-in, .log-out {
+	color:#00a300;
+}
+
+#register-form input[type='submit']:hover,
+#register-form input[type='reset']:hover {
+	background-color:#cdcdcd;
+	border-color:#000000;
+}
+
+
+/* ------------------------------------------------------------------------- */
+		/* TRANSITION */
+/* ------------------------------------------------------------------------- */
+
+
+
+a,
+input {
+	text-decoration:none;
+	-webkit-transition:border-color .3s ease-in-out, color .3s ease-in-out, background-color .3s ease-in-out, font-size .3s ease-in-out, text-shadow .3s ease-in-out;
+	-moz-transition:border-color .3s ease-in-out, color .3s ease-in-out, background-color .3s ease-in-out, font-size .3s ease-in-out, text-shadow .3s ease-in-out;
+	-ms-transition:border-color .3s ease-in-out, color .3s ease-in-out, background-color .3s ease-in-out, font-size .3s ease-in-out, text-shadow .3s ease-in-out;
+	-o-transition:border-color .3s ease-in-out, color .3s ease-in-out, background-color .3s ease-in-out, font-size .3s ease-in-out, text-shadow .3s ease-in-out;
+	transition:border-color .3s ease-in-out, color .3s ease-in-out, background-color .3s ease-in-out, font-size .3s ease-in-out, text-shadow .3s ease-in-out;
+}
+
+
+body {
+
+	background-image: url('../images/notebook.png');
+}
+
+
+/* ------------------------------------------------------------------------- */
+		/* HEADER */
+/* ------------------------------------------------------------------------- */
+
+header {
+	position: relative;
+}
+
+.header_inner {
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.logging {
+	float:left;
+}
+
+.logging a {
+	cursor: pointer;
+}
+
+.logging .user_email {
+	left: 120px;
+	position: absolute;
+	top: 133px;
+	z-index: 2;
+}
+
+#mini-avatar {
+	position: absolute;
+	left: 10px;
+	top: 100px;
+}
+
+.log-in:hover,
+.log-out:hover {
+	text-shadow: 5px 5px 5px #00CC00
+
+}
+
+
+
+#login-form {
+	display: none;
+	width: 300px;
+	padding:30px;
+	margin: 30px auto;
+	position: relative;
+	text-align: center;
+
+	border: 1px solid #fff;
+	border-radius: 5px;
+
+	box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+
+
+/* Input field */
+#login-form .input {
+	padding: 10px 20px;
+	margin-bottom: 10px;
+	font-weight: 400;
+	font-size: 14px;
+	text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+
+	background: #fff;
+	border: 1px solid #fff;
+	border-radius: 5px;
+
+	box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+	-moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+	-webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+}
+
+#login-form .input:hover {
+	background: #dfe9ec;
+	color: #414848;
+}
+
+#login-form .input:focus {
+	background: #dfe9ec;
+	color: #414848;
+
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25);
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+/* Login button */
+#login-form .button {
+	padding: 10px 20px;
+	margin-bottom: 10px;
+	font-weight: 300;
+	color: #000;
+	text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+	cursor: pointer;
+
+	box-shadow: inset 0 0 2px rgba(256, 256, 256, 0.75);
+	-moz-box-shadow: inset 0 0 2px rgba(256, 256, 256, 0.75);
+}
+
+#login-form .button:hover {
+	background: #00a300;
+	border: 1px solid rgba(256,256,256,0.75);
+
+	box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+}
+
+#login-form .button:focus {
+	position: relative;
+	bottom: -1px;
+
+	background: #56c2e1;
+
+	box-shadow: inset 0 1px 6px rgba(256,256,256,0.75);
+	-moz-box-shadow: inset 0 1px 6px rgba(256,256,256,0.75);
+	-webkit-box-shadow: inset 0 1px 6px rgba(256,256,256,0.75);
+}
+
+/* Register button */
+#login-form .footer-form .register {
+	padding: 10px;
+	margin-right: 20px;
+
+	background: none;
+	border: none;
+	cursor: pointer;
+
+	font-family: 'Bree Serif', serif;
+	font-weight: 300;
+	font-size: 18px;
+	color: #414848;
+	text-shadow: 0px 1px 0 rgba(256,256,256,0.5);
+}
+
+#login-form .footer-form .register:hover {
+	color: #3f9db8;
+}
+
+#login-form .footer-form .register:focus {
+	position: relative;
+	bottom: -1px;
+}
+
+.nav {
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+
+.box {
+	display: inline-block;
+	/*float:left;*/
+	opacity: 0.7;
+	height:100px;
+	overflow: hidden;
+	width:10%;
+	margin: 0 -2px;
+	-webkit-transition: width 1s;
+	-moz-transition: width 1s;
+	transition: width 1s;
+}
+
+.box.main {
+	background-color: #FFFF99;
+	-webkit-border-top-left-radius: 50px;
+	-webkit-border-bottom-left-radius: 50px;
+	-moz-border-radius-topleft: 50px;
+	-moz-border-radius-bottomleft: 50px;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+}
+
+.box.home {
+	background-color: #2d89ef;
+}
+
+.box.about {
+	background-color: #00a300;
+	-webkit-border-top-right-radius: 50px;
+	-webkit-border-bottom-right-radius: 50px;
+	-moz-border-radius-topright: 50px;
+	-moz-border-radius-bottomright: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+.box.malting { background-color: #e3a21a; }
+
+.box a {
+	color:#000000;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+	height:100%;
+	display:block;
+	padding-top: 20px;
+	text-transform: uppercase;
+}
+
+.box span {
+	display:block;
+	position:relative;
+	top:100%;
+	text-align: center;
+	opacity: 1;
+	-webkit-transition: top 1s;
+	-moz-transition: top 1s;
+	transition: top 1s;
+}
+
+.nav:hover .box { width:10%;  }
+
+.nav .box:hover { width: 20%; opacity: 1;}
+
+.box:hover span{ top:-40%; left:-25% }
+
+#content {
+	margin:0 auto;
+	width:80%;
+	padding:20px;
+}
+
+#content h2 {
+	text-align: center;
+}
+
+#register-form {
+	overflow: hidden;
+	text-align: center;
+}
+
+#register-form label {
+	display: inline-block;
+	position: relative;
+	width: 140px;
+	text-align:left;
+}
+
+#register-form input {
+	padding:5px;
+	margin:20px;
+	border-radius:6px;
+}
+
+#register-form select {
+	padding:2px;
+	margin:2px;
+	border-radius:6px;
+}
+
+#register-form input[type='text'] {
+	width:200px;
+}
+
+.content_register p {
+	text-align: center;
+}
+
+.error {
+	font-size: 12px;
+	color:red;
+}
